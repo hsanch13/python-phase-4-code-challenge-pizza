@@ -174,7 +174,6 @@ class TestApp:
                     "restaurant_id": restaurant.id,
                 }
             )
-
             assert response.status_code == 400
             assert response.json['errors'] == ["validation errors"]
 
